@@ -28,6 +28,10 @@ import com.barclaycard.internal.model.Party;
 public class CalculationTest {
 
 
+	/**
+	 * Method to input the sample input data and obtain expected output
+	 * @return the calculated result
+	 */
 	public Map<Party, String> calculate() {
 		List<List<Integer>> seats = new ArrayList<>();
 		List<Integer> row = new ArrayList<>();
@@ -71,14 +75,17 @@ public class CalculationTest {
 		parties.put(new Party("Brown", 8), null);
 		parties.put(new Party("Miller", 12), null);
 		
+		// Run sample input through main source calculation logic
 		Map<Party, String> TrueOutput = Processer.calculate(seats, parties);
 		return TrueOutput;
 	}
 	
 	@Test
+	/**
+	 * Test Class to validate with mock sample output
+	 */
 	public void testSampleInputOutput() {
 		
-
 		// Final Output Example
 		Party party1 = new Party("Smith", 2, 1, 1, true);
 		Party party2 = new Party("Jones", 5, 2, 1, true);
@@ -104,16 +111,13 @@ public class CalculationTest {
 		finalOutput.put(party7, party7.getName() + BLANK_SPACE + TEMPLATE_ROW + party7.getRow()
 		+ BLANK_SPACE + TEMPLATE_SECTION + party7.getSection());
 		finalOutput.put(party8, party8.getName() + " " + PARTY_OVERRIDES_SECTION);
-		
+
 		Map<Party, String> trueOutput = calculate();
 		
-		System.out.println(finalOutput.get(party1));
-		System.out.println(trueOutput.get(party1));
-		
-		//1. Test equal, ignore order
+		//Test equal
         assertEquals(finalOutput.get(party1), trueOutput.get(party1));
 
-        //2. Test size
+        //Test size
         assertEquals(finalOutput.size(), trueOutput.size());
 
 	}
