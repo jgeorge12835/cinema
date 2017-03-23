@@ -21,7 +21,7 @@ import com.barclaycard.internal.model.Party;
 /**
  * Sample Test for Seating Calculations
  * 
- * @author JGeorge
+ * @author Jerril George
  * @since March 20, 2017
  * @version 1.0
  */
