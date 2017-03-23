@@ -14,4 +14,6 @@ public class OutputConstant {
 	public static final String TEMPLATE_ROW = "Row ";
 	public static final String TEMPLATE_SECTION = "Section ";
 	public static final String BLANK_SPACE = " ";
+
+	public static final String DEFAULT_FILE = "input.txt";
 }
