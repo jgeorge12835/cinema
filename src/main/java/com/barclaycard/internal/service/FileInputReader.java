@@ -1,4 +1,4 @@
-package com.barclaycard.internal;
+package com.barclaycard.internal.service;
 
 import static com.barclaycard.internal.constant.OutputConstant.BLANK_SPACE;
 import static com.barclaycard.internal.constant.OutputConstant.DEFAULT_FILE;

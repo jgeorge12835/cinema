@@ -2,10 +2,10 @@ package com.barclaycard.internal;
 
 import java.util.Map;
 
-import com.barclaycard.internal.FileInputReader;
-import com.barclaycard.internal.Processer;
 import com.barclaycard.internal.model.InputPersistence;
 import com.barclaycard.internal.model.Party;
+import com.barclaycard.internal.service.FileInputReader;
+import com.barclaycard.internal.service.Processer;
 
 /**
  * Class to handle entry into application</br>

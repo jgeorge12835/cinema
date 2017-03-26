@@ -15,8 +15,8 @@ import java.util.Map;
 
 import org.junit.Test;
 
-import com.barclaycard.internal.Processer;
 import com.barclaycard.internal.model.Party;
+import com.barclaycard.internal.service.Processer;
 
 /**
  * Sample Test for Seating Calculations
